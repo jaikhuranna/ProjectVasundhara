@@ -31,7 +31,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d4c867f6b72b714dbb5fd1780afe208, type: 3}
-  m_Name: orb
+  m_Name: orb 1
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 0}
@@ -84,7 +84,7 @@ VisualEffectResource:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: orb
+  m_Name: orb 1
   m_Graph: {fileID: 114350483966674976}
   m_Infos:
     m_RendererSettings:
@@ -780,7 +780,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Gradient, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"colorKeys":[{"color":{"r":0.8867924213409424,"g":0.32576048374176028,"b":0.0,"a":1.0},"time":0.0},{"color":{"r":0.3864295184612274,"g":0.14126332104206086,"b":0.0,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":0.0,"time":0.0},{"alpha":1.0,"time":0.2505836486816406},{"alpha":1.0,"time":0.7470664381980896},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
+      m_SerializableObject: '{"colorKeys":[{"color":{"r":0.30946895480155947,"g":0.4677838385105133,"b":0.5972020030021668,"a":1.0},"time":0.0},{"color":{"r":0.3515326976776123,"g":0.5028865933418274,"b":0.5906190276145935,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":0.0,"time":0.0},{"alpha":1.0,"time":0.2505836486816406},{"alpha":1.0,"time":0.7470664381980896},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
     m_Space: 2147483647
   m_Property:
     name: Color
@@ -2743,7 +2743,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 2
+      m_SerializableObject: 0
     m_Space: 2147483647
   m_Property:
     name: Size
@@ -2841,7 +2841,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Gradient, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"colorKeys":[{"color":{"r":0.020288562402129175,"g":0.016807375475764276,"b":0.016807375475764276,"a":1.0},"time":0.0},{"color":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":0.0,"time":0.0},{"alpha":1.0,"time":0.1117723360657692},{"alpha":1.0,"time":0.8905928134918213},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
+      m_SerializableObject: '{"colorKeys":[{"color":{"r":0.30946895480155947,"g":0.4620770514011383,"b":0.6038275361061096,"a":1.0},"time":0.0},{"color":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":0.0,"time":0.0},{"alpha":1.0,"time":0.1117723360657692},{"alpha":1.0,"time":0.8905928134918213},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
     m_Space: 2147483647
   m_Property:
     name: Color
@@ -4144,7 +4144,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.022173883393406869,"y":0.01850021816790104,"z":0.017641952261328698}'
+      m_SerializableObject: '{"x":0.2874408960342407,"y":0.44520124793052676,"z":0.5840786099433899}'
     m_Space: 2147483647
   m_Property:
     name: Color
@@ -6860,7 +6860,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"r":0.09433960914611817,"g":0.03218819946050644,"b":0.019757919013500215,"a":1.0}'
+      m_SerializableObject: '{"r":0.25818291306495669,"g":0.48514997959136965,"b":0.9822508692741394,"a":1.0}'
     m_Space: 2147483647
   m_Property:
     name: _front
@@ -7030,7 +7030,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"r":0.5471698045730591,"g":0.11725066602230072,"b":0.0,"a":1.0}'
+      m_SerializableObject: '{"r":0.25818291306495669,"g":0.48514997959136965,"b":0.9822508692741394,"a":1.0}'
     m_Space: 2147483647
   m_Property:
     name: _back
