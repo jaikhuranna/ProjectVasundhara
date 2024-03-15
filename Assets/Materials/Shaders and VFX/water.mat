@@ -107,9 +107,9 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Refraction_Scale: 1
-    - _Refraction_Speed: 1
-    - _Refraction_Strength: 2
+    - _Refraction_Scale: 0.7
+    - _Refraction_Speed: 0.1
+    - _Refraction_Strength: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -118,19 +118,21 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _foam: 0
-    - _foam_CutOff: 0
+    - _amount: 0.005
+    - _curve_amount: 0.001
+    - _foam: 2
+    - _foam_CutOff: 1.1
     - _foam_Scale: 100
     - _foam_Speed: 1
     - _water_Depth: 10
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DeepWater: {r: 0, g: 0.19254684, b: 1, a: 0.5019608}
+    - _DeepWater: {r: 0, g: 0.19254678, b: 1, a: 0.5019608}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ShallowWater: {r: 0.20986092, g: 0.78939843, b: 0.8490566, a: 0.2509804}
+    - _ShallowWater: {r: 0.20986086, g: 0.78939843, b: 0.8490566, a: 0.2509804}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _foam_Color: {r: 1, g: 1, b: 1, a: 0.5333334}
+    - _foam_Color: {r: 0, g: 1, b: 0.9904101, a: 0.44313726}
   m_BuildTextureStacks: []
 --- !u!114 &1854191628689876732
 MonoBehaviour:
