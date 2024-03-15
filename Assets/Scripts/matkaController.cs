@@ -94,7 +94,7 @@ public class matkaController : MonoBehaviour
         List<string> ingredients = new List<string>();
         foreach (var ing in InPot)         
         {
-            ingredients.Add(ing.name);
+            ingredients.Add(ing.Elementname);
         }
         Debug.Log("Created List in Pot");
 
@@ -121,22 +121,26 @@ public class matkaController : MonoBehaviour
                         check = true;
                     }
                     
-                    if (!check)
-                    {
-                        Debug.Log("generating => "+recipe.Key);
-
-
-                        var foundObject = Instantiate(RegisteredObjects.Find(x => x.name == recipe.Key),ElementStoragePoint.position + new Vector3(0,0.82f,0),Quaternion.identity);
-                        foundObject.GetComponent<Rigidbody>().AddForce(Vector3.up/4, ForceMode.Impulse);
-
-                        foreach (var element in InPot)
-                        {
-                            Destroy(element);
-                        }
-                        InPot.Clear();
-                        break;
-                    }
                 }
+                
+                if (!check)
+                {
+                    Debug.Log("generating => "+recipe.Key);
+
+
+                    var foundObject = Instantiate(RegisteredObjects.Find(x => x.name == recipe.Key),ElementStoragePoint.position + new Vector3(0,0.82f,0),Quaternion.identity);
+                    foundObject.GetComponent<Rigidbody>().AddForce(Vector3.up/2, ForceMode.Impulse);
+
+                    foreach (var element in InPot)
+                    {
+                        Destroy(element);
+                    }
+                    InPot.Clear();
+                    break;
+                }
+
+                ThrowIngredients();
+                
             }
             else
             {
