@@ -505,6 +505,7 @@ GameObject:
   - component: {fileID: 455711772}
   - component: {fileID: 455711774}
   - component: {fileID: 455711773}
+  - component: {fileID: 455711775}
   m_Layer: 0
   m_Name: Right Controller
   m_TagString: Untagged
@@ -861,6 +862,27 @@ MonoBehaviour:
     m_Reference: {fileID: -6447266317303757838, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!135 &455711775
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455711771}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.10519588
+  m_Center: {x: 0, y: -0.022287369, z: -0.028655127}
 --- !u!1 &688221398
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,6 +1700,7 @@ GameObject:
   - component: {fileID: 1499954694}
   - component: {fileID: 1499954696}
   - component: {fileID: 1499954695}
+  - component: {fileID: 1499954697}
   m_Layer: 0
   m_Name: Left Controller
   m_TagString: Untagged
@@ -2034,6 +2057,27 @@ MonoBehaviour:
     m_Reference: {fileID: -1636515391019944688, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!135 &1499954697
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499954693}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.12082103
+  m_Center: {x: 0, y: -0.03890808, z: -0.03390181}
 --- !u!1 &1728192573
 GameObject:
   m_ObjectHideFlags: 0
