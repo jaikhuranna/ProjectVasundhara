@@ -28,7 +28,7 @@ public class RefillManager : MonoBehaviour
     {
         if (Dict)
         {
-            Debug.Log(HoldingPosition);
+            //Debug.Log(HoldingPosition);
             if (Vector3.Distance(transform.position, HoldingPosition) > 0.5f)
             {
                 var NewElement = Instantiate(this , HoldingPosition, Quaternion.identity);
