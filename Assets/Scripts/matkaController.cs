@@ -16,14 +16,14 @@ public class matkaController : MonoBehaviour
     public TriggerInputDetector XRInput;
 
     private Dictionary<string, List<string>> Recipes;
-
-    public int test;
+    
     // Start is called before the first frame update
     void Start()
     {
         
         
         InPot = new List<ElementTemplate>();
+        XRInput = FindObjectOfType<TriggerInputDetector>();
 
         if (File.Exists(Application.streamingAssetsPath + "/Recipes.json"))
         {
