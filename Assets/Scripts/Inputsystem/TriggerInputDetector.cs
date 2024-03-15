@@ -39,6 +39,7 @@ public class TriggerInputDetector : MonoBehaviour
             _inputData._rightController.TryGetFeatureValue(CommonUsages.secondaryButton, out RightSecondaryDown);
 
             _inputData._leftController.TryGetFeatureValue(CommonUsages.primary2DAxis , out LeftJoystick);
+            _inputData._rightController.TryGetFeatureValue(CommonUsages.primary2DAxis, out RightJoystick);
         }
 
         public bool GetLeftPrimary() => LeftPrimaryDown;
@@ -47,6 +48,7 @@ public class TriggerInputDetector : MonoBehaviour
         public bool GetRightSecondary() => RightSecondaryDown;
 
         public Vector2 GetLeftJoyStick() => LeftJoystick;
+        public Vector2 GetRightJoyStick() => RightJoystick;
 
         public bool GetLeftPrimaryDown()
         {
