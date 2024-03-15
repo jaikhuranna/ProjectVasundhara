@@ -273,7 +273,7 @@ PrefabInstance:
     - target: {fileID: 9166388615114944059, guid: 6f7ba0152890be249b2c435b3179f911,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.02
+      value: 1.05
       objectReference: {fileID: 0}
     - target: {fileID: 9166388615114944059, guid: 6f7ba0152890be249b2c435b3179f911,
         type: 3}
@@ -586,15 +586,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1054692416138667935, guid: f7b36fb00c6b2c844a7a129fa39a14f9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1735014152645888393, guid: f7b36fb00c6b2c844a7a129fa39a14f9,
         type: 3}
       propertyPath: m_Name
       value: Soil Orb
       objectReference: {fileID: 0}
+    - target: {fileID: 2227076155345837296, guid: f7b36fb00c6b2c844a7a129fa39a14f9,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f55b74b050f125844a6b2e93f8daeace, type: 2}
     - target: {fileID: 8370806931120784288, guid: f7b36fb00c6b2c844a7a129fa39a14f9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.5407338
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 8370806931120784288, guid: f7b36fb00c6b2c844a7a129fa39a14f9,
         type: 3}
@@ -604,7 +614,7 @@ PrefabInstance:
     - target: {fileID: 8370806931120784288, guid: f7b36fb00c6b2c844a7a129fa39a14f9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.3948555
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 8370806931120784288, guid: f7b36fb00c6b2c844a7a129fa39a14f9,
         type: 3}
