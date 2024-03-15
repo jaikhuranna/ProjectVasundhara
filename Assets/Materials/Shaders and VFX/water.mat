@@ -108,7 +108,7 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Refraction_Scale: 0.7
-    - _Refraction_Speed: 0.1
+    - _Refraction_Speed: 0.05
     - _Refraction_Strength: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
@@ -127,7 +127,7 @@ Material:
     - _water_Depth: 10
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 0.38431373}
     - _DeepWater: {r: 0, g: 0.19254678, b: 1, a: 0.5019608}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShallowWater: {r: 0.20986086, g: 0.78939843, b: 0.8490566, a: 0.2509804}
