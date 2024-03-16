@@ -13,11 +13,15 @@ public class OffsetCustomizer : MonoBehaviour
     public GameObject lineOfSight;
     public GameObject ui;
     public GameObject text;
+    public GameObject titleobj;
+    public GameObject title;
     
     private TriggerInputDetector XRInput;
     // Start is called before the first frame update
     void Start()
     {
+        titleobj.SetActive(false);
+        title.SetActive(false);
         XRInput = FindObjectOfType<TriggerInputDetector>();
         lineOfSight.SetActive(true);
         transform.position = new Vector3(0, 0, 0);
@@ -52,6 +56,8 @@ public class OffsetCustomizer : MonoBehaviour
             Debug.Log("pressed teri maa bkl");
             lineOfSight.SetActive(false);
             text.SetActive(false);            
+            titleobj.SetActive(true);
+            title.SetActive(true);
         }
     }
 }

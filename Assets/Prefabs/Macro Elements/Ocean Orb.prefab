@@ -5177,6 +5177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Elementname: Ocean
+  selfbody: {fileID: 0}
 --- !u!1 &8275088588177772761
 GameObject:
   m_ObjectHideFlags: 0

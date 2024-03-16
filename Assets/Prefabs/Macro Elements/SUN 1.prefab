@@ -250,6 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Elementname: SUN
+  selfbody: {fileID: 0}
 --- !u!114 &8400616599099866760
 MonoBehaviour:
   m_ObjectHideFlags: 0

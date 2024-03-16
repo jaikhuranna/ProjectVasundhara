@@ -5176,6 +5176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Elementname: Soil
+  selfbody: {fileID: 0}
 --- !u!1 &7654179390343247821
 GameObject:
   m_ObjectHideFlags: 0
