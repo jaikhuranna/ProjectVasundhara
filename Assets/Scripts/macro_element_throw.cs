@@ -5,15 +5,16 @@ using UnityEngine;
 
 public class macro_element_throw : MonoBehaviour
 {
-    public GameObject GroundMesh;
-    public ParticleSystem PSforORB;
+    public GameObject Effect;
+
+ 
+
     private void OnCollisionEnter(Collision other)
     {
-        if(other.gameObject.CompareTag("Ground"))
+        if (other.gameObject.name == "TriggerGround")
         {
-            GroundMesh.SetActive(true);
-            PSforORB.Play();
-            Destroy(gameObject,2);
+            Debug.Log("Hit The Ground Trigger");
+            Instantiate(Effect);
         }
     }
 }

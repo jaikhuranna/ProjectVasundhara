@@ -5160,8 +5160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1583a6c9f6e4a474e842af7dc28c73a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GroundMesh: {fileID: 0}
-  PSforORB: {fileID: 5419294135685154781}
+  Effect: {fileID: 3072010126339976900, guid: 667e0605b13188443815586eb3f41623, type: 3}
 --- !u!1 &7654179390343247821
 GameObject:
   m_ObjectHideFlags: 0
