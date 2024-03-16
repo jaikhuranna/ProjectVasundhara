@@ -11,6 +11,7 @@ public class OffsetCustomizer : MonoBehaviour
     public InputActionProperty grabRight;
     public InputActionProperty grabLeft;
     public GameObject lineOfSight;
+    public GameObject ui;   
     
     private TriggerInputDetector XRInput;
     // Start is called before the first frame update
@@ -41,11 +42,12 @@ public class OffsetCustomizer : MonoBehaviour
             transform.position = vector3;
         }
 
-        if (grabRight.action.ReadValue<int>() >  0f || grabLeft.action.ReadValue<int>() > 0f)
+        if (grabRight.action.ReadValue<float>() >  0f || grabLeft.action.ReadValue<float>() > 0f)
         {
             this.enabled = false;
+            Debug.Log("pressed teri maa bkl");
             lineOfSight.SetActive(false);
-            
+            Instantiate(ui);
         }
     }
 }
