@@ -5,6 +5,8 @@ using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.VFX;
 using Random = UnityEngine.Random;
 
 public class matkaController : MonoBehaviour
@@ -16,6 +18,7 @@ public class matkaController : MonoBehaviour
     public TriggerInputDetector XRInput;
 
     private Dictionary<string, List<string>> Recipes;
+    public VisualEffect poof;
     
     // Start is called before the first frame update
     void Start()
@@ -60,8 +63,9 @@ public class matkaController : MonoBehaviour
     {
         if (XRInput.GetLeftPrimaryDown())
         {
-            Debug.Log("X Pressed");
-            CheckIngredients();
+            // Debug.Log("X Pressed");
+            // CheckIngredients();
+            SceneManager.LoadScene(1);
         }
     }
 
@@ -147,7 +151,10 @@ public class matkaController : MonoBehaviour
             else
             {
                 Debug.Log("Does not match Ingredient Counts ");
-                StartCoroutine(ThrowIngredients());
+                if (InPot.Count != 0)
+                {
+                    ThrowIngredients();
+                }
             }
 
             
@@ -155,15 +162,14 @@ public class matkaController : MonoBehaviour
         
     }
 
-    IEnumerator ThrowIngredients()
+    public void ThrowIngredients()
     {
-        yield return new WaitForSeconds(1);
         foreach (var element in InPot)
         {
-            element.gameObject.SetActive(true);
-            //new Vector3(Random.Range(-0.5f, 0.5f),Random.Range(0f, -0.5f), 1.2f)*6
-            element.GetComponent<Rigidbody>().AddForce(((Vector3.up )*3) + new Vector3(Random.Range(0.2f,0f),Random.Range(-0.2f,0.2f),0), ForceMode.Impulse);
-
+            Destroy(element);
         }
+        InPot.Clear();
+        poof.Play();
+
     }
 }
