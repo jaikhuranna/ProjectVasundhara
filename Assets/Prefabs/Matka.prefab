@@ -117,6 +117,8 @@ MonoBehaviour:
   - {fileID: 7798022397219550650, guid: b27998039b57ec645a65a8afa8da0bcb, type: 3}
   - {fileID: 7061011754210539974, guid: 2f057b6649447d8408713adbd84ed860, type: 3}
   - {fileID: 8838545182376261980, guid: 3588373fbe9b97748b91cc3e97d95f7e, type: 3}
+  - {fileID: 1735014152645888393, guid: f7b36fb00c6b2c844a7a129fa39a14f9, type: 3}
+  - {fileID: 4923076685877070686, guid: e231df9a840ad7247911d8eb0f8a8433, type: 3}
   InPot: []
   ElementStoragePoint: {fileID: 5422517697268809517}
   XRInput: {fileID: 0}

@@ -8,10 +8,19 @@ public class ElementTemplate : MonoBehaviour
 {
 
     public string Elementname;
+    public Rigidbody selfbody;
+
+
+    private void OnEnable()
+    {
+        selfbody = GetComponent<Rigidbody>();
+    }
     
 
-    public void Start()
+    public void SetKinematic()
     {
-        
+        selfbody.isKinematic = false;
+        selfbody.angularDrag = 1;
+        selfbody.drag = 2.5f;
     }
 }
