@@ -58,6 +58,7 @@ public class OffsetCustomizer : MonoBehaviour
             text.SetActive(false);            
             titleobj.SetActive(true);
             title.SetActive(true);
+            
         }
     }
 }
