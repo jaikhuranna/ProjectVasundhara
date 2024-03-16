@@ -4957,7 +4957,7 @@ Rigidbody:
   m_GameObject: {fileID: 1735014152645888393}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 1.5
+  m_Drag: 0.5
   m_AngularDrag: 1
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -5160,7 +5160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1583a6c9f6e4a474e842af7dc28c73a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Effect: {fileID: 3072010126339976900, guid: 667e0605b13188443815586eb3f41623, type: 3}
+  UnActiveMesh: {fileID: 0}
+  ThrowParticle: {fileID: 5419294135685154781}
 --- !u!1 &7654179390343247821
 GameObject:
   m_ObjectHideFlags: 0
