@@ -615,6 +615,7 @@ MonoBehaviour:
       type: 3}
   lineOfSight: {fileID: 7077392159093285674}
   ui: {fileID: 8632801779910924072, guid: 69c00e19aa618e54f8d2c51429a46961, type: 3}
+  text: {fileID: 0}
 --- !u!1 &8537760921545260336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,7 +1533,7 @@ PrefabInstance:
     - target: {fileID: 6958142407494122573, guid: f981904e358cc904babfe61e58b00b76,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.945305
+      value: 32.245308
       objectReference: {fileID: 0}
     - target: {fileID: 6958142407494122573, guid: f981904e358cc904babfe61e58b00b76,
         type: 3}

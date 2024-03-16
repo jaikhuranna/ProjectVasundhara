@@ -11,7 +11,8 @@ public class OffsetCustomizer : MonoBehaviour
     public InputActionProperty grabRight;
     public InputActionProperty grabLeft;
     public GameObject lineOfSight;
-    public GameObject ui;   
+    public GameObject ui;
+    public GameObject text;
     
     private TriggerInputDetector XRInput;
     // Start is called before the first frame update
@@ -19,7 +20,8 @@ public class OffsetCustomizer : MonoBehaviour
     {
         XRInput = FindObjectOfType<TriggerInputDetector>();
         lineOfSight.SetActive(true);
-        transform.position = new Vector3(0, 0, 0); 
+        transform.position = new Vector3(0, 0, 0);
+        transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
     }
 
     // Update is called once per frame
@@ -46,8 +48,10 @@ public class OffsetCustomizer : MonoBehaviour
         if (grabRight.action.ReadValue<float>() == 1f || grabLeft.action.ReadValue<float>() == 1f)
         {
             this.enabled = false;
+            transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
             Debug.Log("pressed teri maa bkl");
             lineOfSight.SetActive(false);
+            text.SetActive(false);            
         }
     }
 }
