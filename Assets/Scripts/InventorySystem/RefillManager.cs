@@ -6,6 +6,7 @@ public class RefillManager : MonoBehaviour
 {
     public string HolderName;
     private Vector3 HoldingPosition;
+    public GameObject SelfObject;
 
     public bool Dict;
 
@@ -31,8 +32,8 @@ public class RefillManager : MonoBehaviour
             //Debug.Log(HoldingPosition);
             if (Vector3.Distance(transform.position, HoldingPosition) > 0.3f)
             {
-                var NewElement = Instantiate(this , HoldingPosition, Quaternion.identity);
-                NewElement.InitElement(false);
+                var NewElement = Instantiate(SelfObject , HoldingPosition, Quaternion.identity);
+                NewElement.GetComponent<RefillManager>().InitElement(false);
                 this.enabled = false;
             }
         }

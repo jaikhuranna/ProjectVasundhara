@@ -132,8 +132,11 @@ public class matkaController : MonoBehaviour
                     Debug.Log("generating => "+recipe.Key);
 
 
-                    var foundObject = Instantiate(RegisteredObjects.Find(x => x.name == recipe.Key),ElementStoragePoint.position +Vector3.up*0.005f + new Vector3(0,0.82f,0),Quaternion.identity);
-                    foundObject.GetComponent<RefillManager>().InitElement(true);
+                    var foundObject = Instantiate(RegisteredObjects.Find(x => x.GetComponent<ElementTemplate>().Elementname == recipe.Key),ElementStoragePoint.position +Vector3.up*0.005f + new Vector3(0,0.82f,0),Quaternion.identity);
+                    if (foundObject.TryGetComponent<RefillManager>(out RefillManager ele))
+                    {
+                        ele.InitElement(true);
+                    }
 
                     foreach (var element in InPot)
                     {

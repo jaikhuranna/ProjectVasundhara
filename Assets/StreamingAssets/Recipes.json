@@ -5,7 +5,7 @@
     "CO2" : ["C","C","O"],
     "H20" : ["H","H","O"],
     "NaCl" : ["Na","Cl"],
-    "Ocean" : ["H20","NaCl"],
+    "Ocean" : ["H2O","NaCl"],
     "SUN" : ["H","H","H","H","H"],
     "Atmosphere" : ["O2","H2","CO2","N2"],
     "Soil" : ["N2","Mg","Ca","H2O","O2","CO2","Ca"],
