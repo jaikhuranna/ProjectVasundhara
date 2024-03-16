@@ -129,6 +129,7 @@ public class matkaController : MonoBehaviour
 
 
                     var foundObject = Instantiate(RegisteredObjects.Find(x => x.name == recipe.Key),ElementStoragePoint.position + new Vector3(0,0.82f,0),Quaternion.identity);
+                    foundObject.GetComponent<RefillManager>().InitElement(true);
                     foundObject.GetComponent<Rigidbody>().AddForce(Vector3.up/2, ForceMode.Impulse);
 
                     foreach (var element in InPot)
@@ -139,6 +140,7 @@ public class matkaController : MonoBehaviour
                     break;
                 }
 
+                Debug.Log("Does not fit any Recipe");
                 ThrowIngredients();
                 
             }
