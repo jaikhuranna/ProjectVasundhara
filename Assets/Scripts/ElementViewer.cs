@@ -64,6 +64,7 @@ public class ElementViewer : MonoBehaviour
             // label.text = SeeingObject.Elementname;
             
             
+            
             if (SeeingObject != null)
             {
                 // // Calculate the direction from UI to the player's camera
@@ -97,7 +98,7 @@ public class ElementViewer : MonoBehaviour
             if (seen.Count > 0)
             {
                 var ele = seen[0];
-
+                
                 foreach (var seenelement in seen)
                 {
                     if (seenelement != null)
@@ -126,34 +127,38 @@ public class ElementViewer : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.TryGetComponent<ElementTemplate>(out ElementTemplate element))
+        if (other.gameObject != null)
         {
-            seen.Remove(element);
-
-            if (seen.Count > 0)
+            if (other.TryGetComponent<ElementTemplate>(out ElementTemplate element))
             {
-                var ele = seen[0];
+                seen.Remove(element);
 
-                foreach (var seenelement in seen)
+                if (seen.Count > 0)
                 {
-                    if (Vector3.Distance(transform.position, seenelement.transform.position) <
-                        Vector3.Distance(ele.transform.position, transform.position))
+                    var ele = seen[0];
+
+                    foreach (var seenelement in seen)
                     {
-                        ele = seenelement;
+                        if (Vector3.Distance(transform.position, seenelement.transform.position) <
+                            Vector3.Distance(ele.transform.position, transform.position))
+                        {
+                            ele = seenelement;
+                        }
                     }
-                }
                 
-                Disp.SetActive(true);
-                Disp.transform.position = ele.transform.position + new Vector3(0,0.1f,0);
-                label.text = ele.Elementname;
-                SeeingObject = ele;
-            }
-            else
-            {
-                Disp.SetActive(false);
-                SeeingObject = null;
+                    Disp.SetActive(true);
+                    Disp.transform.position = ele.transform.position + new Vector3(0,0.1f,0);
+                    label.text = ele.Elementname;
+                    SeeingObject = ele;
+                }
+                else
+                {
+                    Disp.SetActive(false);
+                    SeeingObject = null;
+                }
             }
         }
+        
     }
     
 }

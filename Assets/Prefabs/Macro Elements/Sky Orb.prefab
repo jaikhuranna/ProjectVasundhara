@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2337486895585573929}
   - component: {fileID: 386810767621721284}
   - component: {fileID: 6660620583705988081}
+  - component: {fileID: 7159693167692018905}
   m_Layer: 0
   m_Name: Sky Orb
   m_TagString: Untagged
@@ -68,8 +69,8 @@ Rigidbody:
   m_GameObject: {fileID: 1325317131352357909}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0.5
-  m_AngularDrag: 0.05
+  m_Drag: 2.5
+  m_AngularDrag: 1
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -85,7 +86,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &386810767621721284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,23 +191,23 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 1
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
   m_TrackPosition: 1
-  m_SmoothPosition: 0
+  m_SmoothPosition: 1
   m_SmoothPositionAmount: 8
   m_TightenPosition: 0.1
   m_TrackRotation: 1
-  m_SmoothRotation: 0
+  m_SmoothRotation: 1
   m_SmoothRotationAmount: 8
   m_TightenRotation: 0.1
   m_TrackScale: 1
@@ -251,6 +252,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burstParticle: {fileID: 4738360554283823591}
+--- !u!114 &7159693167692018905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325317131352357909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8124575356b1504a91be2fecfb84bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Elementname: Atmosphere
+  selfbody: {fileID: 0}
 --- !u!1 &4901243444110271365
 GameObject:
   m_ObjectHideFlags: 0

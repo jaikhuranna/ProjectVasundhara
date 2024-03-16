@@ -605,7 +605,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   label: {fileID: 1289880545731951843}
   Disp: {fileID: 9052426441134507135}
-  scale: 0
+  seen: []
+  SeeingObject: {fileID: 0}
+  scale: 2
 --- !u!65 &3657883506110741880
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -703,6 +705,8 @@ MonoBehaviour:
   lineOfSight: {fileID: 7077392159093285674}
   ui: {fileID: 8632801779910924072, guid: 69c00e19aa618e54f8d2c51429a46961, type: 3}
   text: {fileID: 0}
+  titleobj: {fileID: 0}
+  title: {fileID: 0}
 --- !u!1 &8537760921545260336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1504,18 +1508,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9052426441134507135}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.3297603}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4910470194383933804}
   m_Father: {fileID: 3550474255025401303}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 1.3889294, y: -0.6277606}
-  m_SizeDelta: {x: 10, y: 10}
+  m_SizeDelta: {x: 687.99994, y: 354}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &319047793129856585
 Canvas:
