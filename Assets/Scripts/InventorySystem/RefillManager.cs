@@ -12,6 +12,8 @@ public class RefillManager : MonoBehaviour
 
     public void InitElement(bool crafted)
     {
+        // GetComponent<Rigidbody>().drag = 2.5f;
+        // GetComponent<Rigidbody>().angularDrag = 1;
         if (crafted)
         {
             this.enabled = false;
@@ -34,6 +36,7 @@ public class RefillManager : MonoBehaviour
             {
                 var NewElement = Instantiate(SelfObject , HoldingPosition, Quaternion.identity);
                 NewElement.GetComponent<RefillManager>().InitElement(false);
+                GetComponent<Rigidbody>().isKinematic = false;
                 this.enabled = false;
             }
         }

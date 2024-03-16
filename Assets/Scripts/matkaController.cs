@@ -138,8 +138,14 @@ public class matkaController : MonoBehaviour
                         ele.InitElement(true);
                     }
 
+                    var viewer = FindObjectOfType<ElementViewer>();
                     foreach (var element in InPot)
                     {
+                        viewer.seen.Remove(element);
+                        if (viewer.SeeingObject == element)
+                        {
+                            viewer.SeeingObject = null;
+                        }
                         Destroy(element);
                     }
                     InPot.Clear();
