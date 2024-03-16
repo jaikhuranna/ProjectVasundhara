@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f8e9420a9f4a88742a1fd175a1c841d3,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8e9420a9f4a88742a1fd175a1c841d3,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8e9420a9f4a88742a1fd175a1c841d3,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8e9420a9f4a88742a1fd175a1c841d3,
         type: 3}
@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HolderName: Holder-9
+  SelfObject: {fileID: 7798022397219550650}
   Dict: 0
 --- !u!114 &7442832217420077600
 MonoBehaviour:
@@ -188,7 +189,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &6651273627620473516
 MonoBehaviour:
   m_ObjectHideFlags: 0

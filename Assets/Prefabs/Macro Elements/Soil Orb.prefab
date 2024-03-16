@@ -4902,6 +4902,7 @@ GameObject:
   - component: {fileID: 1992865773022393845}
   - component: {fileID: 1155411413296537526}
   - component: {fileID: 6057412859006443224}
+  - component: {fileID: -448566252075016732}
   m_Layer: 0
   m_Name: Soil Orb
   m_TagString: Untagged
@@ -5162,6 +5163,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UnActiveMesh: {fileID: 0}
   ThrowParticle: {fileID: 5419294135685154781}
+--- !u!114 &-448566252075016732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735014152645888393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8124575356b1504a91be2fecfb84bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Elementname: Soil
 --- !u!1 &7654179390343247821
 GameObject:
   m_ObjectHideFlags: 0
