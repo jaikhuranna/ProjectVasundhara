@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Water
   - Terrain
+  - Sky
   layers:
   - Default
   - TransparentFX
