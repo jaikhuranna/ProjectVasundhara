@@ -7,6 +7,7 @@ public class macro_element_throw : MonoBehaviour
 {
     public GameObject UnActiveMesh;
     public ParticleSystem ThrowParticle;
+    
 
     private void Start()
     {
@@ -36,6 +37,12 @@ public class macro_element_throw : MonoBehaviour
             
             ThrowParticle.Play();
             Destroy(gameObject,1f);
+        }
+
+        if (other.CompareTag("Sky"))
+        {
+            Debug.Log("Loading Sun");
+            FindObjectOfType<ManagedEnvs>().toSUN();
         }
     }
 }

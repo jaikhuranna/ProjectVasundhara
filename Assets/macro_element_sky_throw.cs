@@ -21,5 +21,6 @@ public class macro_element_sky_throw : MonoBehaviour
   
         yield return new WaitForSeconds(5f);
         burstParticle.Play();
+        FindObjectOfType<ManagedEnvs>().toSUN();
     }
 }

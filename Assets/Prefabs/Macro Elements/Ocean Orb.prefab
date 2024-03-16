@@ -5162,8 +5162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1583a6c9f6e4a474e842af7dc28c73a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UnActiveMesh: {fileID: 5419985523881392684, guid: b13ff1f83f2cacd409c4448b926e00d1,
-    type: 3}
+  UnActiveMesh: {fileID: 0}
   ThrowParticle: {fileID: 3221593580446799598}
 --- !u!114 &-4714364702749073137
 MonoBehaviour:

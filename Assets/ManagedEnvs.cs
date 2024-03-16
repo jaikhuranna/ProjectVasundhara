@@ -15,10 +15,13 @@ public class ManagedEnvs : MonoBehaviour
     public int test;
 
     public int test2;
+    public Material sun;
+
+    public Material stars;
     // Start is called before the first frame update
     void Start()
     {
-        
+        RenderSettings.skybox = stars;
     }
 
     // Update is called once per frame
@@ -42,5 +45,10 @@ public class ManagedEnvs : MonoBehaviour
     public void soilactive()
     {
         terrain.SetActive(true);
+    }
+
+    public void toSUN()
+    {
+        RenderSettings.skybox = sun;
     }
 }
