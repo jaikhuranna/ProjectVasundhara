@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UnActiveMesh: {fileID: 0}
-  ThrowParticle: {fileID: 0}
+  ThrowParticle: {fileID: 1920366605313772216}
 --- !u!1 &6369240978496700958
 GameObject:
   m_ObjectHideFlags: 0
