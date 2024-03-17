@@ -288,8 +288,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438031307}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.08675764}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -297,7 +297,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 2.5}
+  m_AnchoredPosition: {x: -6.115593, y: -7.018011}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &438031309
@@ -321,9 +321,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "O2 - O + O\r\nN2 - N + N\r\nH2 - H + H\r\nCO2 - C + O + O\r\nH2O - H +
-    H + O\r\nNaCl - Na + Cl \r\nOcean -  H2O + NaCl\r\nSUN -  H + H + H + H + H\r\nAtmosphere
-    - O2 + H2 + CO2 + N2\r\nSoil - N2 + Mg + Ca + H2O + O2 + CO2 + Ca\r\nStone -
-    Si + Fe + Mg + Ca + Na + Cl + C\r\nTree - O2 + H20 + CO2 + N2"
+    H + O\r\nNaCl - Na + Cl \r\nOcean -  H2O + NaCl\r\nSUN -  H + H + H + H + H\r\nSoil
+    - N2 + Mg + Ca + H2O + O2 + CO2\nStone - Si + Fe + Mg + Ca + Na + Cl + C\r\nTree
+    - O2 + H20 + CO2 + N2"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -386,7 +386,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 53.777496, y: -18.680687, z: 54.235798, w: 0}
+  m_margin: {x: 53.777496, y: -18.680687, z: 40.53862, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -809,7 +809,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387686058}
   m_LocalRotation: {x: -0, y: 0.7121042, z: -0, w: 0.7020738}
-  m_LocalPosition: {x: 0, y: 0, z: -4.088}
+  m_LocalPosition: {x: 0, y: 0, z: -4.1752}
   m_LocalScale: {x: 0.014257223, y: 0.014257223, z: 0.014257223}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -818,8 +818,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90.813, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.90999985, y: -0.29600143}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.90999985, y: -0.16030121}
+  m_SizeDelta: {x: 12.2299, y: -19.0324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1387686060
 MonoBehaviour:

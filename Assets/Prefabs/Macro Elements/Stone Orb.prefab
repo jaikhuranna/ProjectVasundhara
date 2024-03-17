@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1792920446543202190}
   - component: {fileID: 5940355940840078389}
   - component: {fileID: 4871517231798385261}
-  - component: {fileID: 5069404733208456404}
   - component: {fileID: 8173191130914581282}
   - component: {fileID: -7076798415704759128}
+  - component: {fileID: 800787279596523286}
   m_Layer: 0
   m_Name: Stone Orb
   m_TagString: Untagged
@@ -216,7 +216,35 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!135 &5069404733208456404
+--- !u!114 &8173191130914581282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844255134381306198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1583a6c9f6e4a474e842af7dc28c73a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnActiveMesh: {fileID: 0}
+  ThrowParticle: {fileID: 2259600459748472752}
+--- !u!114 &-7076798415704759128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844255134381306198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8124575356b1504a91be2fecfb84bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Elementname: Stone
+  selfbody: {fileID: 0}
+--- !u!135 &800787279596523286
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -235,37 +263,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.1
+  m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8173191130914581282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1844255134381306198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1583a6c9f6e4a474e842af7dc28c73a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UnActiveMesh: {fileID: 3302937763586269044, guid: b74f0c7d68298794d81aca56a8b972ae,
-    type: 3}
-  ThrowParticle: {fileID: 2259600459748472752}
---- !u!114 &-7076798415704759128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1844255134381306198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8124575356b1504a91be2fecfb84bf4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Elementname: Stone
-  selfbody: {fileID: 0}
 --- !u!1001 &4376623666806235950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -274,31 +273,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1792920446543202190}
     m_Modifications:
-    - target: {fileID: 1787799922677847350, guid: 4c48d1c8a46d8c54599d7e41fc4fe22f,
-        type: 3}
-      propertyPath: m_PropertySheet.m_Float.m_Array.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1787799922677847350, guid: 4c48d1c8a46d8c54599d7e41fc4fe22f,
-        type: 3}
-      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Name
-      value: duration
-      objectReference: {fileID: 0}
-    - target: {fileID: 1787799922677847350, guid: 4c48d1c8a46d8c54599d7e41fc4fe22f,
-        type: 3}
-      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Value
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1787799922677847350, guid: 4c48d1c8a46d8c54599d7e41fc4fe22f,
-        type: 3}
-      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Overridden
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2322036700712776957, guid: 4c48d1c8a46d8c54599d7e41fc4fe22f,
-        type: 3}
-      propertyPath: m_Name
-      value: stone orb
-      objectReference: {fileID: 0}
     - target: {fileID: 7367176956253118861, guid: 4c48d1c8a46d8c54599d7e41fc4fe22f,
         type: 3}
       propertyPath: m_Name
